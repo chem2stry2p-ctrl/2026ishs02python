@@ -3,4 +3,5 @@ import pandas as pd
 
 df = pd.read_csv('smart_classroom.csv')
 df.rename(columns={'timestamp':'Datetime'})
+df = df.set_index('Datetime')
 
